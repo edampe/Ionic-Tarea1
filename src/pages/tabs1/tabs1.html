@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar text-center>
+    <ion-title>Llamadas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <button ion-item 
+    *ngFor="let personaje of copiaPersonaje"
+    (click)="verPersonaje(personaje)">
+
+      <ion-avatar item-start>
+        <img [src]="personaje.img">
+      </ion-avatar>
+
+      <h2>{{ personaje.nombre }}</h2>
+      <p>{{ personaje.titulo }}</p>
+
+    </button>
+
+</ion-list>
+
+</ion-content>
