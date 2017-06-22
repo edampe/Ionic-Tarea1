@@ -20,7 +20,7 @@ export class Tabs1Page {
 
   verPersonaje(personaje: any){
 
-    this.navCtrl.push(Pagina2Page, {"personaje":personaje})
+    this.navCtrl.push(Pagina2Page, { personaje })
 
   }
 

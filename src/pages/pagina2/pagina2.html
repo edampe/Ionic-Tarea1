@@ -2,24 +2,25 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>pagina2</ion-title>
+    <ion-title>{{ personaje.nombre }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content >
+<ion-content padding text-center>
 
-  <ion-card>
-    <img [src]="personaje.img"/>
-    <ion-card-content>
-      <ion-card-title>
-        Nine Inch Nails Live
-        </ion-card-title>
-      <p>
-        The most popular industrial group ever, and largely
-        responsible for bringing the music to a mass audience.
-      </p>
-    </ion-card-content>
-  </ion-card>
+      <img [src]="personaje.img">
+
+      <h2>{{ personaje.nombre }}</h2>
+      <p>{{ personaje.titulo }}</p>
+
+  
+  <button ion-button color="primary"
+                      block
+                      navPop>
+        Regresar...
+  </button>
+
+
 </ion-content>
