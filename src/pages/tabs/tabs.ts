@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
 
 import { Tabs1Page, Tabs2Page, Tabs3Page } from '../index.paginas';
 
